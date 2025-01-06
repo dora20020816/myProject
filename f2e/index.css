@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* variables  --------------------------*/
+
+:root {
+    --primary-color:#24b4d7;
+    --opacity-color:rgba(255,255,255,.3);
+}
+
+/* reset --------------------------*/
+
+body{
+    font-family: "Noto Sans TC", serif;
+}
+
+
+img{
+    vertical-align: bottom;
+}
+
+/* header -------------------*/
+
+.header-food{
+    /* background-color: pink; */
+    display: none;
+}
+
+.nav-btnWrap{
+    display: none;
+}
+
+.header{
+background-color: papayawhip;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
