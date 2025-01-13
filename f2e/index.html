@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 "> 
-    <meta name="keywords" content="前端工程, 前端工程師, 前端, 網頁工程師">
+    <meta name="keywords" content="前端工程, 前端工程師, 前端, 網頁工程師, F2E, Front end, Front end Engineer">
     <meta name="description" content="許多人認為「工程師」是一個遙不可及的職位，以為自己如果不是資工相關領域出身，就會難以成為工程師。但其實有許多後端工程師、軟體工程師等都是透過自學轉職成為優秀的工程師。那麼，該怎麼做呢？本次 10 個常見的前端、軟體工程師等課程，「成為工程師」不再只是空想，而是真的可以邁進的方向！">
-    <meta property="og:url"                content="https://appleliu0603.github.io/f2e/">
+    <meta property="og:url"                content="https://awayh.github.io/f2e/">
     <meta property="og:type"               content="website">
     <meta property="og:title"              content="F2E 前端開發">
     <meta property="og:description"        content="許多人認為「工程師」是一個遙不可及的職位，以為自己如果不是資工相關領域出身，就會難以成為工程師。但其實有許多後端工程師、軟體工程師等都是透過自學轉職成為優秀的工程師。那麼，該怎麼做呢？本次 10 個常見的前端、軟體工程師等課程，「成為工程師」不再只是空想，而是真的可以邁進的方向！">
-    <meta property="og:image"              content="https://appleliu0603.github.io/f2e/">
+    <meta property="og:image"              content="https://awayh.github.io/f2e/images/og-index.png">
     <meta property="og:locale"             content="zh_TW">
     <title>F2E 前端開發</title>
     <link rel="stylesheet" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 </head>
 <body>
-    <header class="header">
+    <header class="header header-fixed">
         <div class="header-head">
             <a href="javascript:;">
                 <img class="header-img header-img-logo" src="./images/header-logo.png" width="160" height="45" alt="F2E 前端開發">
@@ -32,7 +32,7 @@
             <nav class="nav">
                 <ul class="nav-ul">
                     <li class="nav-li">
-                        <a class="nav-link" href="javascript:;">自我挑戰</a>
+                        <a class="nav-link" href="javascript:;">挑戰自我</a>
                     </li>
                     <li class="nav-li">
                         <a class="nav-link" href="javascript:;">課程說明</a>
@@ -43,38 +43,83 @@
                 </ul>
                 <div class="nav-btnWrap">
                     <button class="nav-btn" type="button">
-                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-xmark fa-fw"></i>
                     </button>
                 </div>
             </nav>
-
         </div>
-        <div class="header-foot">
-            <div class="header-btn" type="button">
-                <i class="fa-solid fa-bars"></i>
-            </div>
 
+        <div class="header-foot">
+            <div class="header-btnWrap">
+                <button class="header-btn" type="button">
+                    <i class="fa-solid fa-bars fa-fw"></i>
+                </button>
+            </div>
         </div>
 
 
     </header>
     <section class="banner">
-      <div class="banner-head">
+      <div class="banner-head ani-blend-color h-gradient-stripe">
         <h2 class="banner-subtitle">F2E 前端開發</h2>
         <h1 class="banner-title">前端工程師 養成班</h21>
         <P class="banner-description">學會，百萬年薪不是夢</P>
       </div>
       <div class="banner-body">
-        <img class="banner-img" src="./images/banner/banner-1-desktop.jpg" alt="" width="">
-        <img class="banner-img" src="./images/banner/banner-2-desktop.jpg" alt="">
-        <img class="banner-img" src="./images/banner/banner-3-desktop.jpg" alt="">
-        <img class="banner-img" src="./images/banner/banner-3-desktop.jpg" alt="">
-
+        <img class="banner-img ani-fade" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
+        <img class="banner-img ani-fade ani-delay-5" src="./images/banner/banner-2-desktop.jpg" width="1024" height="565" alt="">
+        <img class="banner-img ani-fade ani-delay-10" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
+        <img class="banner-img ani-fade ani-delay-15" src="./images/banner/banner-4-desktop.jpg" width="1800" height="1200" alt="">
       </div>
     </section>
+
+    <section class="section section-info">
+        <div class="section-container h-container-m h-mx-auto h-row">
+            <header class="section-head">
+                <h2 class="section-title">轉職？成為前端工程師？挑戰自我？<br>三個願望一次滿足！</h2>
+                <p class="section-description">我們的學員來自獸醫、咖啡師、圖像設計師等不同背景<br>他們克服心中的恐懼，冒著最後有可能一無所有的風險<br>挑戰未知的領域，最終成為前端工程師</p>
+                <img class="section-img section-img-student h-img-resp" src="./images/info/info-student.jpg" width="1880" height="945" alt="學員專訪">
+            </header>
+            <div class="section-body">
+                <img class="section-img section-img-discuss h-img-resp" src="./images/info/info-discuss.jpg" width="1920" height="1097" alt="與老師討論">
+            </div>
+            <footer class="section-foot">
+                <div class="section-btnWrap">
+                    <a class="section-btn section-btn-primary" href="javascript:;">我想了解更多</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <section class="section section-subject h-gradient-stripe">
+        <div class="section-container h-container-m h-mx-auto h-row">
+            <header class="section-head">
+                <h2 class="section-title">想要培養一技之長，成為前端工程師嗎？</h2>
+            </header>
+            <div class="section-body">
+                <div class="section-item">
+                    <h3 class="section-subtitle">第一階段</h3>
+                    <div class="section-grid">
+                        <section class="card">
+                            <header class="card-head">
+                                <span class="card-tag">第一週</span>
+                                <img class="card-img h-img-resp" src="./images/subject/card-1.jpg" width="768" height="520" alt="程式規劃基礎">
+                            </header>
+                            <div class="card-body">
+                                <h3 class="card-title">程式規劃基礎</h3>
+                                <p class="card-description">組合語言的描述、分析、設計技巧</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer class="section-foot">
+             <div class="section-btnWrap">
+                <a class="section-btn section-btn-light" href="javascript:;">我想了解更多</a>
+            </div>
+        </footer>
+    </div>   
+</section>
 </body>
-
-
-
 
 </html>
